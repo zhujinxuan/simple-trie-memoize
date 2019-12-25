@@ -4,5 +4,15 @@
   "description": "Simple Trie Cache for function cache",
   "main": "src/index.js",
   "author": "Jinxuan Zhu <zhujinxuan@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/uuid": "^3.4.6",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "build": "rm -r dist && tsc"
+  },
+  "dependencies": {
+    "uuid": "^3.3.3"
+  }
 }
