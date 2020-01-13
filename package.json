@@ -10,7 +10,7 @@
     "typescript": "^3.7.3"
   },
   "scripts": {
-    "build": "rm -r dist && tsc"
+    "build": "tsc"
   },
   "dependencies": {
     "uuid": "^3.3.3"

@@ -17,7 +17,7 @@ function getGen<Args extends any[], B>(x : F<Args, B>, spec : MemoSpec) : Gen<B>
     return res
 }
 
-function memo<Args extends any[], B>(x: F<Args, B>, spec : MemoSpec): typeof x {
+export function memo<Args extends any[], B>(x: F<Args, B>, spec : MemoSpec): typeof x {
     const gen = getGen(x, spec)
     return function (this : any, ...args: Args) : B {
         const ignoreThis = spec.ignoreThis || !x.prototype
@@ -26,3 +26,5 @@ function memo<Args extends any[], B>(x: F<Args, B>, spec : MemoSpec): typeof x {
         return gen.once(cargs, evalBy)
     }
 }
+
+export {MemoSpec} from './gen'
