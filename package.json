@@ -1,5 +1,5 @@
 {
-  "name": "simple-trie-cache",
+  "name": "simple-trie-memoize",
   "version": "0.0.1",
   "description": "Simple Trie Cache for function cache",
   "main": "src/index.js",
