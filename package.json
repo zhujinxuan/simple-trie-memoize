@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Simple Trie Cache for function cache",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "author": "Jinxuan Zhu <zhujinxuan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
